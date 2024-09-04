@@ -1,13 +1,27 @@
 .box{
+    display: flex;
+    flex-direction: column;
     height: 150px;
     width:150px;
-    border: 1px solid grey;
+    border: 0.5px solid grey;
     border-radius: 8px;
     margin: 1rem;
+    padding: 0.5rem;
+    /* text-align: center; */
+    align-items: center;
+    justify-content: center;
     /* padding: 2rem; */
     }
     .mainDiv{
-        display: flex;
+    margin: 25px 50px ;
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     }
+
+    /*  time
+    const formatTime = (seconds) => {
+        const minutes = Math.floor(seconds / 60);
+        const remainingSeconds = seconds % 60;
+        return `${minutes}:${remainingSeconds < 10 ? "0" : ""}${remainingSeconds}`;
+      }; */

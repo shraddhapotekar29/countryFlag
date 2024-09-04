@@ -10,14 +10,14 @@ const Xcountries=()=>{
      console.log(response.data);
         }
         catch(err){
-            console.log(err);
+            console.log("Error fetching data: ",err);
         }
     }
 useEffect(()=>{
     getFlagData();
 },[]);
-    return(<div className={style.mainDiv}>
-          {flagData.map((flag)=>(<div className={style.box}>
+    return(<div className={style.mainDiv} >
+          {flagData.map((flag)=>(<div className={style.box} key={flag}>
             <img src={flag.flag} alt={flag.abbr}  height={80} width={80} style={{paddingTop:"1rem"}}/>
             <p>{flag.name}</p>
         </div>))}
