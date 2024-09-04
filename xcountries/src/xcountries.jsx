@@ -10,7 +10,7 @@ const Xcountries=()=>{
      console.log(response.data);
         }
         catch(err){
-            console.log("Error fetching data: ",err);
+            console.log("Error fetching data:",err);
         }
     }
 useEffect(()=>{
